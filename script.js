@@ -5,7 +5,6 @@ const closeModalButtons = qsa('[data-close-button]');
 const overlay = qs('#overlay');
 var currentId = "-1";
 
-
 refreshOpenModalButtons();
 
 overlay.addEventListener('click', () => { qsa('.modal.active').forEach(closeModal) });
@@ -20,7 +19,10 @@ function updateDayChoice(day) {
 function refreshOpenModalButtons() {
 
     const assoc = (day, start_hour, start_min, end_hour, end_min, type_select, group_select, salle, matiere, enseignant) => {
-        qs('#day_choice').innerHTML = day;
+        fetch('get_formatted_date.php?day=' + day)
+            .then(response => response.text())
+            .then(data => { qs('#day_choice').innerHTML = data; })
+            .catch(error => { console.error('Error fetching PHP file:', error); });;
         const associativeArray = {
             'start_hour': start_hour,
             'start_min': start_min,
@@ -44,10 +46,12 @@ function refreshOpenModalButtons() {
                 const [start_hour, start_min, day, group] = button.className.split('_');
 
                 assoc(day, start_hour, start_min, start_hour, start_min, "Cours", group, "", "", "")
-
+                qs('#delete-button').style = 'display:none;';
+                qs('#repeat').value = '1';
+                qs('#repeat_div').style = 'display:block;';
             } else {
 
-                fetch('week.json?_=' + new Date().getTime())
+                fetch('../db/week.json?_=' + new Date().getTime())
                     .then((response) => response.json())
                     .then((data) => {
                         for (var x in data[2]) {
@@ -62,7 +66,8 @@ function refreshOpenModalButtons() {
                                     const end_min = parseInt(start_min) + ((parseInt(item.duree) % 4) * 15);
 
                                     assoc(item.date, start_hour, start_min, end_hour + (end_min >= 60 ? 1 : 0), (end_min % 60 === 0) ? '00' : end_min % 60, item.type, item.groupe, item.salle, item.matiere, item.enseignant)
-
+                                    qs('#delete-button').style = 'display:block;';
+                                    qs('#repeat_div').style = 'display:none;';
                                     return;
                                 }
                             }
@@ -93,6 +98,7 @@ function closeModal(modal) {
     if (!modal) return
     modal.classList.remove('active')
     overlay.classList.remove('active')
+    qs('#error').style = 'display:none;';
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -110,6 +116,8 @@ function avoidForbidden(event) {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// Disable group select if type is "Cours"
+
 qs('#type_select').onchange = (event) => disabledGroup(event);
 
 function disabledGroup(event) {
@@ -122,29 +130,39 @@ function disabledGroup(event) {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-qs('#save-button').onclick = () => onSaveButtonClick();
+// Save or delete a course
 
-function onSaveButtonClick() {
-    const values = ["start_hour", "start_min", "end_hour", "end_min", "type_select", "group_select", "matiere", "enseignant", "salle"].map((id) => $(`#${id}`).val());
-    const [start_hour, start_min, end_hour, end_min, type, group, matiere, enseignant, salle] = values;
+qs('#save-button').onclick = () => onSaveButtonClick(true);
+qs('#delete-button').onclick = () => onSaveButtonClick(false);
 
+function onSaveButtonClick(add_remove) {
+    
+    const values = ["start_hour", "start_min", "end_hour", "end_min", "type_select", "group_select", "matiere", "enseignant", "salle", "repeat"].map((id) => $(`#${id}`).val());
+    const [start_hour, start_min, end_hour, end_min, type, group, matiere, enseignant, salle, repeat] = values;
+    
     const date = $("#day_choice").html();
     const invalidInputs = ["matiere", "enseignant", "salle"].filter((id) => !$("#" + id).val());
-    
     invalidInputs.forEach((id) => $(`#${id}`).css("border", "1px solid red"));
 
+    const validInputs = ["matiere", "enseignant", "salle"].filter((id) => $("#" + id).val());
+    validInputs.forEach((id) => $(`#${id}`).css("border", "1px solid black"));
+    
     const [s_hour, s_min, e_hour, e_min] = [parseInt(start_hour), parseInt(start_min), parseInt(end_hour), parseInt(end_min)];
+   
+    if (invalidInputs.length || (s_hour > e_hour) || (s_hour === e_hour && s_min > e_min)) errorCallback();
 
-    if (invalidInputs.length || (s_hour > e_hour) || (s_hour === e_hour && s_min > e_min)) return;
-
-    const successCallback = () => {
-        updateTable();
+    const successCallback = (response) => {
+        (JSON.stringify(response).includes('Erreur')) ? errorCallback() : updateTable();
     };
 
-    const errorCallback = () => {};
+    const errorCallback = (reponse) => {
+        console.log('Error: ' + reponse);
+        qs('#error').style = 'display:block;';
+        return;
+    };
 
     const postData = {
-        url: "add_course_v2.php",
+        url: "add_course.php",
         type: "POST",
         data: {data: [currentId, date, ...values]},
         success: successCallback,
@@ -156,15 +174,18 @@ function onSaveButtonClick() {
             url: "delete_course.php",
             type: "POST",
             data: {id: currentId},
-            success: () => { $.ajax(postData); },
+            success: () => { (add_remove) ? $.ajax(postData) : updateTable(); },
             error: errorCallback
         });
     } else {
+        console.log('coucou')
         $.ajax(postData);
     }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Update the table when changing week or logging out
 
 qs('#logout').onclick = () => { changeVariable('logout', ''); }
 qs('#next_week').onclick = () => { changeVariable('changeWeek', 'next'); }
@@ -179,7 +200,7 @@ function changeVariable(action, value) {
         success: function(responseText) {
             switch (responseText) {
                 case 'success logout':
-                    window.location.href = 'index.php';
+                    window.location.href = '../index.php';
                     break;
                 case 'success changeWeek':
                     updateTable();
@@ -199,7 +220,7 @@ function changeVariable(action, value) {
 function updateTable() {
     $.ajax({
         type: 'GET',
-        url: 'fetch_table.php',
+        url: 'fetch_table.php?intern=false',
         dataType: 'html',
         success: function(responseText) {
             $('#myTable').html(responseText);
@@ -224,36 +245,3 @@ function updateCurrentWeek() {
         }
     });
 }
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-// Validate button
-
-// document.getElementById('save-button').onclick = () => {          
-//     console.log('coucou');
-// }
-
-// const table = document.getElementById('tableau');
-
-// table.addEventListener('click', function (e) {
-//     const cell = e.target.closest('td');
-//     if (!cell) return;
-//     console.log(cell.className);
-// });

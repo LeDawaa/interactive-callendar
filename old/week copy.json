@@ -1,0 +1,857 @@
+[
+    [
+        "Lundi",
+        "Mardi",
+        "Mercredi",
+        "Jeudi",
+        "Vendredi"
+    ],
+    [
+        "G1",
+        "G2",
+        "G3",
+        "G4"
+    ],
+    {
+        "8h15": [
+            {
+                "type": "TD",
+                "matiere": "WEB",
+                "enseignant": "BILL",
+                "salle": "E203",
+                "date": "Lundi",
+                "groupe": [
+                    "G1",
+                    "G3"
+                ],
+                "duree": "2"
+            },
+            {
+                "type": "TD",
+                "matiere": "WEB",
+                "enseignant": "BILL",
+                "salle": "E203",
+                "date": "Vendredi",
+                "groupe": [
+                    "G2"
+                ],
+                "duree": "4"
+            }
+        ],
+        "8h30": [
+            {
+                "type": "TD",
+                "matiere": "WEB",
+                "enseignant": "BILL",
+                "salle": "E203",
+                "date": "Lundi",
+                "groupe": [
+                    "G1",
+                    "G3"
+                ],
+                "duree": "-1"
+            },
+            {
+                "type": "TD",
+                "matiere": "WEB",
+                "enseignant": "BILL",
+                "salle": "E203",
+                "date": "Vendredi",
+                "groupe": [
+                    "G2"
+                ],
+                "duree": "-1"
+            }
+        ],
+        "8h45": [
+            {
+                "type": "TD",
+                "matiere": "WEB",
+                "enseignant": "BILL",
+                "salle": "E203",
+                "date": "Vendredi",
+                "groupe": [
+                    "G2"
+                ],
+                "duree": "-1"
+            }
+        ],
+        "9h00": [
+            {
+                "type": "TD",
+                "matiere": "WEB",
+                "enseignant": "BILL",
+                "salle": "E203",
+                "date": "Vendredi",
+                "groupe": [
+                    "G2"
+                ],
+                "duree": "-1"
+            }
+        ],
+        "9h15": [],
+        "9h30": [],
+        "9h45": [],
+        "10h00": [],
+        "10h15": [
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": 21
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": 21
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": 21
+            }
+        ],
+        "10h30": [
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            }
+        ],
+        "10h45": [
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            }
+        ],
+        "11h00": [
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            }
+        ],
+        "11h15": [
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            }
+        ],
+        "11h30": [
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            }
+        ],
+        "11h45": [
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            }
+        ],
+        "12h00": [
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            }
+        ],
+        "12h15": [
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            }
+        ],
+        "12h30": [
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            }
+        ],
+        "12h45": [
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            }
+        ],
+        "13h00": [
+            {
+                "type": "Cours",
+                "matiere": "\ud83d\ude00",
+                "enseignant": "d",
+                "salle": "d",
+                "date": "Mardi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": 5
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            }
+        ],
+        "13h15": [
+            {
+                "type": "Cours",
+                "matiere": "\ud83d\ude00",
+                "enseignant": "d",
+                "salle": "d",
+                "date": "Mardi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            }
+        ],
+        "13h30": [
+            {
+                "type": "Cours",
+                "matiere": "\ud83d\ude00",
+                "enseignant": "d",
+                "salle": "d",
+                "date": "Mardi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            }
+        ],
+        "13h45": [
+            {
+                "type": "Cours",
+                "matiere": "\ud83d\ude00",
+                "enseignant": "d",
+                "salle": "d",
+                "date": "Mardi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            }
+        ],
+        "14h00": [
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            }
+        ],
+        "14h15": [
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            }
+        ],
+        "14h30": [
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            }
+        ],
+        "14h45": [
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            }
+        ],
+        "15h00": [
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            },
+            {
+                "type": "Cours",
+                "matiere": "\ud83c\udf51\ud83c\udf51\ud83c\udf51\ud83c\udf51",
+                "enseignant": "\ud83c\udf51\ud83c\udf51",
+                "salle": "\ud83c\udf51",
+                "date": "Mercredi",
+                "groupe": [
+                    "G1"
+                ],
+                "duree": -1
+            }
+        ],
+        "15h15": [],
+        "15h30": [],
+        "15h45": [],
+        "16h00": [],
+        "16h15": [],
+        "16h30": [],
+        "16h45": [],
+        "17h00": [],
+        "17h15": [],
+        "17h30": [],
+        "17h45": [],
+        "18h00": [],
+        "18h15": [],
+        "18h30": [],
+        "18h45": [],
+        "19h00": []
+    }
+]
